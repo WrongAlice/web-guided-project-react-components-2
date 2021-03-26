@@ -1,6 +1,11 @@
 import { v4 as uuid } from 'uuid'
 
-export const hello = 'world'
+const hello = 'world'
+const world = 'hello'
+
+// const hello = 'world
+export { hello, world }
+
 
 export default [
   {
