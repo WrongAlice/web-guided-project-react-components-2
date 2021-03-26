@@ -4,7 +4,7 @@ import Friend from "./Friend"
 
 export default function FriendsList(props) {
   // 👉 2- What data does FriendsList need to do its job? Use destructuring
-  const { friends } = props
+  const { changeCivilStatus, friends } = props
 
   return (
     <div className='list-friends container'>
@@ -13,7 +13,7 @@ export default function FriendsList(props) {
 
       {friends.map((friendObj) => {
         return (
-          <Friend key={friendObj.id} details={friendObj} />
+          <Friend key={friendObj.id} details={friendObj} changeCivilStatus={changeCivilStatus} />
         )
       })}
 
